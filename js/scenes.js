@@ -1022,7 +1022,7 @@ act4_x_chuanghua_2: {
             <br>
         `,
         choices: [
-            { label: "完了，筑基期的，打不过。", target: "act4_x_danger_end" }
+            { label: "完了，筑基期的，打不过。", target: "act4_x_danger_1_end" }
         ]
     },
 
@@ -1049,7 +1049,7 @@ act4_x_chuanghua_2: {
             <br>
         `,
         choices: [
-            { label: "完了，筑基期的，打不过。", target: "act4_x_danger_end" }
+            { label: "完了，筑基期的，打不过。", target: "act4_x_danger_2_end" }
         ],
     },
 
