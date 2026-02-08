@@ -159,6 +159,8 @@ body {
 @media (max-width: 600px) {
   .textcontainer { padding: 18px 16px 26px; }
   .story-title { font-size: 1.4rem; letter-spacing: 0.18em; }
+  .inner { margin: 9px 0 18px; }
+  .line {margin: 0px auto 40px;}
 }
 
 
