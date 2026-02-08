@@ -177,7 +177,7 @@ body {
 
 .cover-title {
   font-size: 2.2rem;
-  font-family: "MyKaiti", "KaiTi", serif;
+  /* font-family: "MyKaiti", "KaiTi", serif; */
   letter-spacing: 0.45em;
   margin-bottom: 10px;
   color: var(--accent-hover); /* var(--accent-color); */
