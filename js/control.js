@@ -1,5 +1,9 @@
 const historyStack = [];
 
+function resetScroll() {
+  window.scrollTo({ top: 0, behavior: "instant" });
+}
+
 function setNavVisible(visible) {
   const nav = document.getElementById("page-nav");
   nav.classList.toggle("is-visible", visible);
@@ -20,6 +24,7 @@ function showScene(id, { pushHistory = true } = {}) {
     btn.className = "choice";
     btn.textContent = "返回开头";
     btn.onclick = () => showScene("start");
+    resetScroll()
     choicesEl.appendChild(btn);
     noteEl.textContent = "";
     setNavVisible(historyStack.length > 1);
@@ -45,6 +50,7 @@ function showScene(id, { pushHistory = true } = {}) {
     btn.style.animationDelay = `${0.25 + 0*ps.length * 0.12}s`;
 
     btn.onclick = () => showScene(choice.target);
+    resetScroll()
     choicesEl.appendChild(btn);
   });
 
@@ -62,11 +68,13 @@ document.getElementById("nav-back").onclick = () => {
   historyStack.pop();               
   const prev = historyStack.pop();  
   showScene(prev, { pushHistory: true });
+  resetScroll()
 };
 
 document.getElementById("nav-home").onclick = () => {
   historyStack.length = 0;
   showScene("start");
+  resetScroll()
 };
 
 
@@ -103,4 +111,5 @@ document.getElementById("enter-story").onclick = () => {
   }, 600);
   historyStack.length = 0;
   showScene("start");
+  resetScroll()
 };
