@@ -42,7 +42,7 @@ function showScene(id, { pushHistory = true } = {}) {
 
     btn.style.opacity = 0;
     btn.style.animation = `bookFade 0.45s ease forwards`;
-    btn.style.animationDelay = `${0.25 + ps.length * 0.12}s`;
+    btn.style.animationDelay = `${0.25 + 0*ps.length * 0.12}s`;
 
     btn.onclick = () => showScene(choice.target);
     choicesEl.appendChild(btn);
