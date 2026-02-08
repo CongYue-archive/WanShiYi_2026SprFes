@@ -62,8 +62,8 @@ const SCENES = {
              
         `,
         choices: [
-            { label: "掌柜的姓厉，剑眉高鼻，一身清俊文雅的儒生气，有带着点闲云野鹤的仙气，叫人一看就觉得亲近。", target: "act3_l" },
-            { label: "掌柜的姓萧，薄唇窄面，端的就是锋芒毕露，可若那深邃的蓝眸真的看来，却又叫人忍不住心生探寻。", target: "act3_x" }
+            { label: "掌柜的姓厉", target: "act3_l" },
+            { label: "掌柜的姓萧", target: "act3_x" }
         ],
         
     },
