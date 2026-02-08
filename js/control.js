@@ -91,13 +91,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (quote) {
     quote.style.opacity = 0;
     quote.style.animation = "bookFade 1.2s ease forwards";
-    quote.style.animationDelay = "0.7s";
+    quote.style.animationDelay = "0.5s";
   }
 
   if (btn) {
     btn.style.opacity = 0;
     btn.style.animation = "bookFade 0.8s ease forwards";
-    btn.style.animationDelay = "2s";
+    btn.style.animationDelay = "1.8s";
   }
 });
 
