@@ -41,7 +41,7 @@ body {
 .textcontainer {
   max-width: 680px;
   width: 100%;
-  padding: 10px 28px 32px;
+  padding: 5px 28px 32px;
   position: relative;
   background: var(--paper-color);
 }
