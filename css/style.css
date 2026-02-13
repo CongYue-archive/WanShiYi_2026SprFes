@@ -5,16 +5,12 @@
   /* --paper-color: #f9f5f2; */
   --paper-color: #fcf9f4;
   --text-color: #2f2320;
-  --dialog-color: #5a2b23;
 
   --accent-color: #9d2c1f;
   --accent-hover: #7f241a;
-  --gold-mute: #c8a55a;
  
   --muted-text: #a07572;
   --muted-2: #c8b9a4;
-
-  --choice-hover-bg: rgba(157, 44, 31, 0.06);
 }
 
 @font-face{
@@ -37,7 +33,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 40px 12px;
+  padding: 60px 12px;
   box-sizing: border-box;
 }
 
@@ -45,12 +41,12 @@ body {
 .textcontainer {
   max-width: 680px;
   width: 100%;
-  padding: 20px 28px 32px;
+  padding: 15px 28px 32px;
   position: relative;
   background: var(--paper-color);
 }
 
-.inner { margin: 18px 0; }
+.inner { margin: 18px 0 ; }
 
 /* 线 */
 .line {
@@ -73,12 +69,6 @@ body {
   text-indent: 2em;
 }
 
-.dialog {
-  text-indent: 2em;
-  color: var(--dialog-color);
-}
-.dialog::before { content: "「"; }
-.dialog::after { content: "」"; }
 
 .speaker {
   font-weight: 600;
@@ -122,7 +112,7 @@ body {
   margin-right: 0.15em;
 }
 
-
+/*---------------navigator--------------*/
 .page-nav {
   position: absolute;
   right: 24px;
@@ -159,7 +149,7 @@ body {
 @media (max-width: 600px) {
   .textcontainer { padding: 18px 16px 26px; }
   .story-title { font-size: 1.4rem; letter-spacing: 0.18em; }
-  .inner { margin: 4px 0 18px; }
+  .inner { margin: 9px 0 18px; }
   .line {margin: 0px auto 40px;}
 }
 
@@ -179,7 +169,7 @@ body {
 
 .cover-title {
   font-size: 2.2rem;
-  /* font-family: "MyKaiti", "KaiTi", serif; */
+  /* font-family: "MyKaiti", "KaiTi", Myserif; */
   letter-spacing: 0.45em;
   margin-bottom: 10px;
   color: var(--accent-hover); /* var(--accent-color); */
